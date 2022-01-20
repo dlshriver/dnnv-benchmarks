@@ -1,0 +1,11 @@
+problem_id,property_filename,network_names,network_filenames
+DroNet_0,properties/dronet_property_0.py,N,onnx/dronet.onnx
+DroNet_1,properties/dronet_property_1.py,N,onnx/dronet.onnx
+DroNet_2,properties/dronet_property_2.py,N,onnx/dronet.onnx
+DroNet_3,properties/dronet_property_3.py,N,onnx/dronet.onnx
+DroNet_4,properties/dronet_property_4.py,N,onnx/dronet.onnx
+DroNet_5,properties/dronet_property_5.py,N,onnx/dronet.onnx
+DroNet_6,properties/dronet_property_6.py,N,onnx/dronet.onnx
+DroNet_7,properties/dronet_property_7.py,N,onnx/dronet.onnx
+DroNet_8,properties/dronet_property_8.py,N,onnx/dronet.onnx
+DroNet_9,properties/dronet_property_9.py,N,onnx/dronet.onnx

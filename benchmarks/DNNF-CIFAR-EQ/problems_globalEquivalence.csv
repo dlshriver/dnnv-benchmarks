@@ -1,0 +1,2 @@
+problem_id,property_filename,network_names,network_filenames
+GLOBAL_EQ,properties/global_equivalence_property.py,N1:N2,onnx/convBigRELU__DiffAI.onnx:onnx/ResNet18_DiffAI.onnx

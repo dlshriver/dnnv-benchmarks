@@ -1,0 +1,11 @@
+problem_id,property_filename,network_names,network_filenames
+LOCAL_EQ_0,properties/local_equivalence_property_0.py,N1:N2,onnx/convBigRELU__DiffAI.onnx:onnx/ResNet18_DiffAI.onnx
+LOCAL_EQ_1,properties/local_equivalence_property_1.py,N1:N2,onnx/convBigRELU__DiffAI.onnx:onnx/ResNet18_DiffAI.onnx
+LOCAL_EQ_2,properties/local_equivalence_property_2.py,N1:N2,onnx/convBigRELU__DiffAI.onnx:onnx/ResNet18_DiffAI.onnx
+LOCAL_EQ_3,properties/local_equivalence_property_3.py,N1:N2,onnx/convBigRELU__DiffAI.onnx:onnx/ResNet18_DiffAI.onnx
+LOCAL_EQ_4,properties/local_equivalence_property_4.py,N1:N2,onnx/convBigRELU__DiffAI.onnx:onnx/ResNet18_DiffAI.onnx
+LOCAL_EQ_5,properties/local_equivalence_property_5.py,N1:N2,onnx/convBigRELU__DiffAI.onnx:onnx/ResNet18_DiffAI.onnx
+LOCAL_EQ_6,properties/local_equivalence_property_6.py,N1:N2,onnx/convBigRELU__DiffAI.onnx:onnx/ResNet18_DiffAI.onnx
+LOCAL_EQ_7,properties/local_equivalence_property_7.py,N1:N2,onnx/convBigRELU__DiffAI.onnx:onnx/ResNet18_DiffAI.onnx
+LOCAL_EQ_8,properties/local_equivalence_property_8.py,N1:N2,onnx/convBigRELU__DiffAI.onnx:onnx/ResNet18_DiffAI.onnx
+LOCAL_EQ_9,properties/local_equivalence_property_9.py,N1:N2,onnx/convBigRELU__DiffAI.onnx:onnx/ResNet18_DiffAI.onnx

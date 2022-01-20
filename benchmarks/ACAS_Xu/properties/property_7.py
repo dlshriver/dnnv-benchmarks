@@ -2,7 +2,7 @@
 Property $\phi_7$.
   - Description: If vertical separation is large, the network will never advise a strong turn.
   - Tested on: $N_{1,9}$.
-  - Input constraints: $0 \le \rho \le 60760$, $−3.141592 \le \theta \le 3.141592$, $−3.141592 \le \psi \le 3.141592$, $100 \le v_{own} \le 1200$, $0 \le v_{int} \le 1200$.
+  - Input constraints: $0 \le \rho \le 60760$, $-3.141592 \le \theta \le 3.141592$, $-3.141592 \le \psi \le 3.141592$, $100 \le v_{own} \le 1200$, $0 \le v_{int} \le 1200$.
   - Desired output property: the scores for ``strong right'' and ``strong left'' are never the minimal scores.
 """
 from dnnv.properties import *

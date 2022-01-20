@@ -2,7 +2,7 @@
 Property $\phi_3$.
   - Description: If the intruder is directly ahead and is moving towards the ownship, the score for COC will not be minimal.
   - Tested on: all networks except $N_{1,7}$, $N_{1,8}$, and $N_{1,9}$.
-  - Input constraints: $1500 \le \rho \le 1800$, $−0.06 \le \theta \le 0.06$, $\psi \ge 3.10$, $v_{own} \ge 980$, $v_{int} \ge 960$.
+  - Input constraints: $1500 \le \rho \le 1800$, $-0.06 \le \theta \le 0.06$, $\psi \ge 3.10$, $v_{own} \ge 980$, $v_{int} \ge 960$.
   - Desired output property: the score for COC is not the minimal score.
 """
 from dnnv.properties import *

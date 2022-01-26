@@ -36,24 +36,23 @@ def _parse_args():
         default=Path(__file__).parent,
         metavar="PATH",
         dest="benchmark_path",
-        help="The path to the benchmark to be run (default='.').",
+        help="The path to the benchmark to be run (default='.')",
     )
     config_group.add_argument(
-        "-pf",
+        "-p",
         "--problems-filename",
         type=str,
         default="problems.csv",
         metavar="NAME",
-        help="The name of the csv of the problem set to use (default='problems.csv').",
+        help="The name of the csv of the problem set to use (default='problems.csv')",
     )
     config_group.add_argument(
         "-o",
         "--output",
-        "--results_csv",
         type=Path,
         default=Path("results.csv"),
         dest="results_csv",
-        help="The path to a csv file in which to save results (default='./results.csv').",
+        help="The path to a csv file in which to save results (default='./results.csv')",
     )
 
     resmonitor_group = parser.add_argument_group("Resource Management")
@@ -64,22 +63,22 @@ def _parse_args():
         metavar="PATH",
     )
     resmonitor_group.add_argument(
-        "-T", "--time", default=-1, type=float, help="The max running time in seconds."
+        "-T", "--time", default=-1, type=float, help="The max running time in seconds"
     )
     resmonitor_group.add_argument(
         "-M",
         "--memory",
         default=-1,
         type=memory_t,
-        help="The max allowed memory in bytes.",
+        help="The max allowed memory in bytes",
     )
 
     resmonitor_group.add_argument(
         "-n",
         "--ntasks",
         type=int,
-        default=float("inf"),
-        help="The max number of running verification tasks.",
+        default=1,
+        help="The max number of running verification tasks (default=1).",
     )
     return parser.parse_known_args()
 

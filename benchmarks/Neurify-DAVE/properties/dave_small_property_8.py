@@ -2,7 +2,7 @@ from dnnv.properties import *
 import numpy as np
 
 N = Network("N")
-x = Image(__path__.parent / "dave_small_image8.npy") / 255.0
+x = Image(__path__.parent / "dave_small_image8.npy")[None] / 255.0
 input_layer = 0
 output_layer = -2
 

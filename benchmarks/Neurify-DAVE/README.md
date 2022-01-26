@@ -7,7 +7,7 @@ While the original benchmark used a smaller version of the DAVE network, further
 ## Benchmark Description
 
 We provide 2 problem sets for Neurify-DAVE.
-The first is the original set of verification problems posed by Shiqi Wang et al.
+The first is the original set of verification problems (with L-infinity norm input constraints) posed by Shiqi Wang et al.
 The problems for this benchmark are in `problems_original.csv`.
 The problem set consists of 10 local reachability problems.
 The second set is the set of verification problems used by several evaluations since then, such as [DNNF](https://davidshriver.me/files/publications/ICSE21-DNNF.pdf).

@@ -2,7 +2,7 @@ from dnnv.properties import *
 import numpy as np
 
 N = Network("N")
-x = Image(__path__.parent / "input76.npy")
+x = Image(__path__.parent.parent / "inputs/input76.npy")
 
 epsilon = Parameter("epsilon", type=float, default=(2.0 / 255))
 true_class = 3

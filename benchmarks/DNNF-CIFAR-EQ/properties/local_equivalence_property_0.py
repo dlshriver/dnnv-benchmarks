@@ -4,7 +4,7 @@ import numpy as np
 N1 = Network("N1")
 N2 = Network("N2")
 
-x = Image("properties/input_0.npy")
+x = Image(__path__.parent / "input_0.npy")
 
 epsilon = Parameter("epsilon", type=float)
 

@@ -2,7 +2,7 @@ from dnnv.properties import *
 import numpy as np
 
 N = Network("N")
-N_prob_coll = N[2:-2, 1]
+N_prob_coll = N[2:-3, 1]  # get pre-sigmoid value
 N_steer_angle = N[2:-1, 0]
 
 logit = lambda x: np.log(x / (1 - x))

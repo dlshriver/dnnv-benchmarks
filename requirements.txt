@@ -1,2 +1,3 @@
-dnnv~=0.5
-dnnf~=0.1
+dnnf>=0.1
+dnnv>=0.5
+pandas

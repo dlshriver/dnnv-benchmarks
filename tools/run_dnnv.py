@@ -182,7 +182,7 @@ def update_results(results_csv, task, results):
     with lock(results_csv):
         df = pd.read_csv(results_csv)
         for key, value in results.items():
-            df.at[(df["ProblemId"] == task.problem_id), key] = value
+            df.loc[(df["ProblemId"] == task.problem_id), key] = value
         df.to_csv(results_csv, index=False)
 
 
@@ -205,7 +205,7 @@ def main(args, extra_args):
             if len(problems) == 0:
                 break
             problem_id = problems.pop()
-            df = df.append({"ProblemId": problem_id}, ignore_index=True)
+            df = pd.concat([df, pd.DataFrame({"ProblemId": [problem_id]})])
             df.to_csv(args.results_csv, index=False)
 
         property_filename = (
@@ -229,6 +229,14 @@ def main(args, extra_args):
         resmonitor = f"python {args.resmonitor_path.resolve()}"
         resmonitor_args = f"{resmonitor} -M {args.memory} -T {args.time}"
         extra_args_str = " ".join(extra_args)
+        if "parameters" in problem_df:
+            problem_args = (
+                problem_df[(problem_df["problem_id"] == problem_id)]["parameters"]
+                .unique()
+                .item()
+            )
+            if isinstance(problem_args, str):
+                extra_args_str = f"{extra_args_str} {problem_args}"
         verifier_args = (
             f"python -m dnnv {property_filename} {networks} {extra_args_str}"
         )

@@ -15,7 +15,7 @@ To access the benchmarks, simply clone this repo:
 $ git clone https://github.com/dlshriver/benchmarks.git
 ```
 
-We currently include 5 benchmarks in DNNP and ONNX format.
+We currently include 7 benchmarks in DNNP and ONNX format.
 Each one is in its own sub-directory in the `benchmarks` directory, and each has a README with a description of the benchmark.
 
 We also include some useful tool scripts in the `tools` directory.

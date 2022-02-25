@@ -1,0 +1,8 @@
+problem_id,property_filename,network_names,network_filenames,parameters
+givestrong_20,properties/givestrong.py,N,onnx/lenet.onnx,"--prop.delta=20"
+givestrong_30,properties/givestrong.py,N,onnx/lenet.onnx,"--prop.delta=30"
+givestrong_35,properties/givestrong.py,N,onnx/lenet.onnx,"--prop.delta=35"
+givestrong_50,properties/givestrong.py,N,onnx/lenet.onnx,"--prop.delta=50"
+robustness_08,properties/robustness.py,N,onnx/lenet.onnx,"--prop.epsilon=0.08"
+robustness_12,properties/robustness.py,N,onnx/lenet.onnx,"--prop.epsilon=0.12"
+smoothrobustness_05,properties/smoothrobustness.py,N,onnx/lenet.onnx,""
